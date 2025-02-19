@@ -16,7 +16,7 @@ The website itself is deployed using Vercel @ [lab2.lumijiez.pro](https://lab2.l
 ![image](https://github.com/user-attachments/assets/689cd124-d947-4f43-92a3-6881b2eefeca)
 
 
-REQUIREMENTS:
+# REQUIREMENTS:
 Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
 
 ## Customer requirements
