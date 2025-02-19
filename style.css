@@ -6,6 +6,10 @@
     --text-color: #2C1810;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
