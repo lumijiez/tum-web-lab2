@@ -17,6 +17,7 @@
       Brew Haven
     </div>
     <div class="nav-links">
+      <div class="close-menu"><i class="fas fa-times"></i></div>
       <a href="#about"><i class="fas fa-book-open"></i> About</a>
       <a href="#menu"><i class="fas fa-mug-hot"></i> Menu</a>
       <a href="#specialties"><i class="fas fa-star"></i> Specialties</a>
@@ -41,6 +42,19 @@
   <div class="scroll-indicator">
     <div class="mouse"></div>
     <p>Scroll to discover</p>
+  </div>
+</section>
+
+<section id="mobile-special" class="mobile-only-section">
+  <div class="container">
+    <h2>Today's <span class="highlight">Special</span></h2>
+    <div class="daily-special">
+      <div class="special-badge">Limited Offer</div>
+      <h3>Vanilla Bean Latte</h3>
+      <p>House-made vanilla syrup, double espresso, and velvety steamed milk</p>
+      <div class="special-price">$4.99 <span class="original-price">$5.99</span></div>
+      <a href="#" class="cta-button mobile-special-cta">Order Now <i class="fas fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
 
@@ -102,13 +116,35 @@
       </div>
       <div class="menu-item">
         <div class="menu-image">
-          <img src="https://images.unsplash.com/photo-1545665277-5937489579f2" alt="Pour Over">
+          <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04" alt="Pour Over">
         </div>
         <div class="menu-details">
           <div class="menu-tag">Specialty</div>
           <h3>Pour Over</h3>
           <p>Smooth and aromatic</p>
           <span class="price">$4.00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Cold Brew">
+        </div>
+        <div class="menu-details">
+          <div class="menu-tag">Refreshing</div>
+          <h3>Cold Brew</h3>
+          <p>Bold and refreshing</p>
+          <span class="price">$4.50</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213" alt="Cappuccino">
+        </div>
+        <div class="menu-details">
+          <div class="menu-tag">Classic</div>
+          <h3>Cappuccino</h3>
+          <p>Rich and creamy</p>
+          <span class="price">$4.50</span>
         </div>
       </div>
       <div class="menu-item">
@@ -168,7 +204,7 @@
         </div>
       </div>
     </div>
-    <a href="#" class="cta-button">Order Online <i class="fas fa-shopping-cart"></i></a>
+    <a href="#" style="justify-self: center" class="cta-button">Order Online <i class="fas fa-shopping-cart"></i></a>
   </div>
 </section>
 
@@ -188,5 +224,44 @@
     </div>
   </div>
 </footer>
+
+<div class="mobile-cta">
+  <a href="#" class="cta-button">Order Now <i class="fas fa-shopping-cart"></i></a>
+</div>
+
+<div class="coffee-mascot">
+  <div class="mascot-container">
+    <div class="coffee-bean">
+      <div class="bean-body">
+        <div class="bean-face">
+          <div class="eyes">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+          </div>
+          <div class="mouth"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mascot-message">
+      <p>Hi there! I'm Beany, your coffee guide. Try our daily specials!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelector('.mobile-menu').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.add('active');
+    document.querySelector('.close-menu').classList.add('active');
+  });
+
+  document.querySelector('.close-menu').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.remove('active');
+    document.querySelector('.close-menu').classList.remove('active');
+  });
+
+  setTimeout(function() {
+    document.querySelector('.coffee-mascot').classList.add('visible');
+  }, 3000);
+</script>
 </body>
 </html>
