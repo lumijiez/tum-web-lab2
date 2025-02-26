@@ -634,7 +634,6 @@ section h2 {
     font-size: 16px;
 }
 
-/* Center the Order Online button */
 .center-cta-container {
     display: flex;
     justify-content: center;
@@ -977,7 +976,6 @@ footer {
         padding: 0 15px;
     }
 
-    /* Mobile CTA stays on the right */
     .mobile-cta {
         display: block;
         right: 20px;
@@ -1035,6 +1033,10 @@ footer {
         width: auto;
         margin: 0 auto;
         justify-content: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
     }
 }
 
@@ -1148,7 +1150,6 @@ footer {
         left: 60px;
     }
 
-    /* Fix spacing in daily special section */
     .daily-special {
         padding: 25px 15px;
     }
